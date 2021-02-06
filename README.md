@@ -2,6 +2,6 @@
 
 Structure:
 - leetcode-solutions
-  - Task Number
+  - Task Topic and number
     - README.md with link to task
     - one or more solution
