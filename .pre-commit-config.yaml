@@ -13,3 +13,7 @@ repos:
       - id: forbid-new-submodules
       - id: requirements-txt-fixer
       - id: trailing-whitespace
+  - repo: https://github.com/luminartech/dev-tools
+    rev: 0.14.2
+    hooks:
+      - id: check-snake-case
