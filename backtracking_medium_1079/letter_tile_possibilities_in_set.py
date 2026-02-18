@@ -16,7 +16,7 @@ class Solution:
                 else:
                     ret.add(symbol)
             return ret
-        
+
         count = 0
         for i in range(len(tiles)):
             count += len(generate(tiles, i + 1))

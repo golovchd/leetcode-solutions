@@ -14,7 +14,7 @@ class Solution:
                     if i and nums[i - 1] == num:
                         continue
                     generate(nums[:i] + nums[i + 1:], result, path + [num])
-        
+
         result = []
         nums.sort()
         generate(nums, result, [])

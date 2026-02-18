@@ -11,7 +11,7 @@ class Solution:
                 else:
                     count += 1
             return count
-        
+
         count = 0
         tiles = ''.join(sorted(tiles))
         for i in range(len(tiles)):

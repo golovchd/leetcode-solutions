@@ -10,7 +10,7 @@ class Solution:
         j = 0
         result = []
         while i < l1 and j < l2:
-            # Skip first less then second 
+            # Skip first less then second
             while i < l1 and nums1[i] < nums2[j]:
                 i += 1
             if i == l1:
@@ -25,4 +25,4 @@ class Solution:
             # Skip second less then first
             while j < l2 and nums2[j] < nums1[i]:
                 j += 1
-        return result            
+        return result

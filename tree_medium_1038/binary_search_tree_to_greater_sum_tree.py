@@ -38,4 +38,3 @@ class Solution:
                 else:
                     last = stack.pop(-1)
         return root
-    

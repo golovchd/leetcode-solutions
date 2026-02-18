@@ -9,7 +9,7 @@ class Solution:
                     count += 1 + backtracking(frequencies)
                     frequencies[symbol] += 1
             return count
-        
+
         frequencies = {}
         for symbol in tiles:
             if symbol in frequencies:

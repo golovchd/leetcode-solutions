@@ -18,5 +18,5 @@ class Solution:
                         ret.append([num] + tail)
                         test.add(tmp)
             return ret
-        
+
         return generate(nums)

@@ -13,8 +13,8 @@ class Solution:
         excessive = node.val + left_excessive + right_excessive - 1
         moves = abs(left_excessive) + abs(right_excessive) + left_moves + right_moves
         return excessive,  moves
-            
-        
+
+
     def distributeCoins(self, root: TreeNode) -> int:
         _, moves = self.getMovesAndExcessive(root)
         return moves

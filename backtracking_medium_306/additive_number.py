@@ -8,7 +8,7 @@ class Solution:
                 n2_length = n2_length_s
                 while s < l and s + n1_length + n2_length <= l:
                     n3_start = s + n1_length + n2_length
-                    if (n1_length > 1 and num[s:s + 1] == '0' or 
+                    if (n1_length > 1 and num[s:s + 1] == '0' or
                         n2_length > 1 and num[s + n1_length:s + n1_length + 1] == '0' or
                         max(n1_length, n2_length) > 1 and num[n3_start:n3_start + 1] == '0'):
                         break

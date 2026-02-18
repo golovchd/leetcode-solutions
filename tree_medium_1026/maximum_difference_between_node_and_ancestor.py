@@ -18,7 +18,7 @@ class Solution:
         else:
             right_diff = 0
         return max(diff, left_diff, right_diff)
-        
+
     def maxAncestorDiff(self, root: TreeNode) -> int:
         if not root:
             return 0

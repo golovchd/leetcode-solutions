@@ -19,7 +19,7 @@ class Solution:
                 path[depth] = num
                 generate(num_freq, todo_length - 1, depth + 1, result, path)
                 num_freq[num] += 1
-        
+
         num_freq = {}
         for num in nums:
             if num in num_freq:

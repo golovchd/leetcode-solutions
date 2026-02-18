@@ -15,7 +15,7 @@ class Solution:
             c_cur = c_stack[-1]
             # New node
             if not last or (last != o_cur.left and last != o_cur.right):
-                # Check if we found target 
+                # Check if we found target
                 if o_cur == target:
                     return c_cur
                 if o_cur.left:
@@ -35,4 +35,3 @@ class Solution:
                 else:
                     last = o_stack.pop(-1)
                     c_stack.pop(-1)
-
