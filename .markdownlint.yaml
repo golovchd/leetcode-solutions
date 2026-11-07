@@ -1,0 +1,16 @@
+default: true
+
+MD010:
+  code_blocks: false  # No hard tabs check for code blocks since we have mdformat for this
+
+MD013: false
+
+MD029: false  # Mdformat already provides this functionality, and both do work side by side
+
+MD033:
+  allowed_elements:
+    - br  # Since there is no markdown alternative, we allow <br>
+    - sup  # Since special characters such as "*" can not be used with "^", we allow <sup>
+    - img  # Since special operations such as width or align can not be used with [](), we allow <img>
+
+MD059: false
