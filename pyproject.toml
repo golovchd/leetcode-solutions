@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling>=1.12.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "leetcode_solutions"
+version = "0.1.0"
+description = "Solutions for leetcode"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICEN[CS]E.*"]
+requires-python = ">=3.12,<3.13"
+
+
+[tool.isort]
+line_length = 100
