@@ -1,5 +1,5 @@
 class Solution:
-    def count_neigbors(self, board, i, j) -> int:
+    def count_neighbors(self, board, i, j) -> int:
         count = 0
         if i:
             if j:
@@ -19,7 +19,7 @@ class Solution:
                 count += board[i + 1][j + 1]
         return count
 
-    def gameOfLife(self, board: List[List[int]]) -> None:
+    def gameOfLife(self, board: list[list[int]]) -> None:
         """
         Do not return anything, modify board in-place instead.
         """
@@ -32,7 +32,7 @@ class Solution:
         k = 0
         for i in range(self.n):
             for j in range(self.m):
-                count = self.count_neigbors(board, i, j)
+                count = self.count_neighbors(board, i, j)
                 if board[i][j]:
                     new_line[k][j] = 0 if count < 2 or count > 3 else 1
                 else:

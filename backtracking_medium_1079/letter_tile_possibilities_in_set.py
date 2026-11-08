@@ -1,11 +1,11 @@
 class Solution:
     def numTilePossibilities(self, tiles: str) -> int:
         """Use set, recursion on new symbol."""
-        def generate(tiles: str, length: int) -> Set[str]:
+        def generate(tiles: str, length: int) -> set[str]:
             if length == 0:
-                return set([])
-            ret = set([])
-            processed = set([])
+                return set()
+            ret = set()
+            processed = set()
             for i, symbol in enumerate(tiles):
                 if length > 1:
                     if symbol in processed:

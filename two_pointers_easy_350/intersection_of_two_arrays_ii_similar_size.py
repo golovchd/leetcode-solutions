@@ -1,5 +1,5 @@
 class Solution:
-    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+    def intersect(self, nums1: list[int], nums2: list[int]) -> list[int]:
         if not nums1 or not nums2:
             return []
         nums1.sort()

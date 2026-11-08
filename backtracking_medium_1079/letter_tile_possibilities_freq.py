@@ -1,7 +1,7 @@
 class Solution:
     def numTilePossibilities(self, tiles: str) -> int:
         """Use frequency count."""
-        def backtracking(frequencies: Dict[str, int]) -> int:
+        def backtracking(frequencies: dict[str, int]) -> int:
             count = 0
             for symbol in frequencies:
                 if frequencies[symbol] > 0:
@@ -10,7 +10,7 @@ class Solution:
                     frequencies[symbol] += 1
             return count
 
-        frequencies = {}
+        frequencies: dict[str, int] = {}
         for symbol in tiles:
             if symbol in frequencies:
                 frequencies[symbol] += 1

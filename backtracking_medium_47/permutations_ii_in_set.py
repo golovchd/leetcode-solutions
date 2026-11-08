@@ -1,13 +1,13 @@
 class Solution:
-    def permuteUnique(self, nums: List[int]) -> List[List[int]]:
-        def generate(nums: List[int]) -> List[List[int]]:
+    def permuteUnique(self, nums: list[int]) -> list[list[int]]:
+        def generate(nums: list[int]) -> list[list[int]]:
             if not nums:
                 return []
             if len(nums) == 1:
                 return [nums]
             ret = []
-            test = set([])
-            processed = set([])
+            test = set()
+            processed = set()
             for i, num in enumerate(nums):
                 if num in processed:
                     continue

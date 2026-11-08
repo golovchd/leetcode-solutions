@@ -1,6 +1,6 @@
 class Solution:
-    def reconstructQueue(self, people: List[List[int]]) -> List[List[int]]:
-        heights = {}
+    def reconstructQueue(self, people: list[list[int]]) -> list[list[int]]:
+        heights: dict[int,list[list[int]]] = {}
         for p in people:
             if p[0] in heights:
                 heights[p[0]].append(p)
@@ -11,7 +11,7 @@ class Solution:
         heights_queue = list(heights.keys())
         heights_queue.sort()
         l = len(people)
-        result = [None] * l
+        result: list[list[int]] = [[]] * l
         for height in heights_queue:
             for cur in heights[height]:
                 c = 0
