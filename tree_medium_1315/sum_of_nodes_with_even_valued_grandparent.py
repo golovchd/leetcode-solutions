@@ -1,11 +1,11 @@
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 class Solution:
-    # Submition https://leetcode.com/submissions/detail/452839861/
+    # Submission https://leetcode.com/submissions/detail/452839861/
     # Runtime: 108 ms, faster than 36.30% of Python3 online submissions for Sum of Nodes with Even-Valued Grandparent.
     # Memory Usage: 17.7 MB, less than 94.44% of Python3 online submissions for Sum of Nodes with Even-Valued Grandparent.
     # Time O(V), Memory O(V)

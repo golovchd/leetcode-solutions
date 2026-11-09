@@ -1,13 +1,14 @@
 # 289. Game of Life
+
 Solved / Medium
 
 Link to problem: https://leetcode.com/problems/game-of-life/description/
 Link to best submission:
+
 - With dual board: https://leetcode.com/problems/game-of-life/submissions/1922716002
 - With in-place update: https://leetcode.com/problems/game-of-life/submissions/1922858384
 
-
-## Decription
+## Description
 
 According to Wikipedia's article: "The Game of Life, also known simply as Life, is a cellular automaton devised by the British mathematician John Horton Conway in 1970."
 
@@ -23,27 +24,21 @@ Given the current state of the board, update the board to reflect its next state
 
 Note that you do not need to return anything.
 
-
-
 Example 1:
 
-
-Input: board = [[0,1,0],[0,0,1],[1,1,1],[0,0,0]]
-Output: [[0,0,0],[1,0,1],[0,1,1],[0,1,0]]
+Input: board = \[[0,1,0],[0,0,1],[1,1,1],[0,0,0]\]
+Output: \[[0,0,0],[1,0,1],[0,1,1],[0,1,0]\]
 Example 2:
 
-
-Input: board = [[1,1],[1,0]]
-Output: [[1,1],[1,1]]
-
+Input: board = \[[1,1],[1,0]\]
+Output: \[[1,1],[1,1]\]
 
 Constraints:
 
 m == board.length
 n == board[i].length
-1 <= m, n <= 25
+1 \<= m, n \<= 25
 board[i][j] is 0 or 1.
-
 
 Follow up:
 

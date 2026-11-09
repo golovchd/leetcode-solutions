@@ -17,7 +17,6 @@ The median of an array is the middle element after sorting the array in ascendin
 For example, the median of [2,3,1,4] is 2, and the median of [8,4,3,5,1] is 4.
 A subarray is a contiguous part of an array.
 
-
 Example 1:
 
 Input: nums = [3,2,1,4,5], k = 4
@@ -29,10 +28,9 @@ Input: nums = [2,3,1], k = 3
 Output: 1
 Explanation: [3] is the only subarray that has a median equal to 3.
 
-
 Constraints:
 
 n == nums.length
-1 <= n <= 105
-1 <= nums[i], k <= n
+1 \<= n \<= 105
+1 \<= nums[i], k \<= n
 The integers in nums are distinct.

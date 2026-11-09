@@ -1,12 +1,10 @@
 import random
 import sys
-from typing import List
-from typing import Dict
 
 
 class Solution:
-    def permuteUnique(self, nums: List[int]) -> List[List[int]]:
-        def generate(nums: List[int], result, path):
+    def permuteUnique(self, nums: list[int]) -> list[list[int]]:
+        def generate(nums: list[int], result, path):
             if len(nums) == 1:
                 result.append(path + nums)
             else:
@@ -15,7 +13,7 @@ class Solution:
                         continue
                     generate(nums[:i] + nums[i + 1:], result, path + [num])
 
-        result = []
+        result: list[list[int]] = []
         nums.sort()
         generate(nums, result, [])
         return result
@@ -40,4 +38,4 @@ if __name__ == '__main__':
     result = Solution().permuteUnique(nums)
     print('Result count:', len(result), f' Total size or result from {nums} in bytes is ', sys.getsizeof(result))
     total_gb = sys.getsizeof(result) * sys.getsizeof(result[0]) / (8 * 1024 * 1024 * 1024)
-    print(f'Size of each premutation is about ', sys.getsizeof(result[0]), ' total mem usage in GB: ', total_gb)
+    print(f'Size of each permutation is about ', sys.getsizeof(result[0]), ' total mem usage in GB: ', total_gb)

@@ -1,6 +1,7 @@
 import pytest
 from count_subarrays_with_median_k import Solution
 
+
 @pytest.mark.parametrize(
     "nums, k, result",
     [

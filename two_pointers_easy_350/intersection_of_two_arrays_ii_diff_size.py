@@ -1,5 +1,5 @@
 class Solution:
-    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+    def intersect(self, nums1: list[int], nums2: list[int]) -> list[int]:
         if not nums1 or not nums2:
             return []
         l1 = len(nums1)
@@ -9,7 +9,7 @@ class Solution:
         return self._intersect(nums2, nums1)
 
 
-    def _intersect(self, small: List[int], large: List[int]) -> List[int]:
+    def _intersect(self, small: list[int], large: list[int]) -> list[int]:
         small.sort()
         result = []
         e = len(small) - 1
@@ -28,7 +28,7 @@ class Solution:
         return result
 
 
-    def b_search(seld, value: int, nums: List[int], s: int, e: int) -> int:
+    def b_search(seld, value: int, nums: list[int], s: int, e: int) -> int:
         while s <= e:
             m = (s + e) // 2
             if value == nums[m]:

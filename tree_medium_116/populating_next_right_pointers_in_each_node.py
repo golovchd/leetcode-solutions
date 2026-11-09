@@ -1,18 +1,16 @@
-"""
 # Definition for a Node.
 class Node:
-    def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):
+    def __init__(self, val: int = 0, left: 'Node'|None = None, right: 'Node'|None = None, next: 'Node'|None = None):
         self.val = val
         self.left = left
         self.right = right
         self.next = next
-"""
 
 class Solution:
-    def connect(self, root: 'Node') -> 'Node':
+    def connect(self, root: 'Node') -> 'Node'|None:
         if not root:
             return None
-        cur = root
+        cur: Node|None = root
         last = root
         while cur:
             if cur.left:

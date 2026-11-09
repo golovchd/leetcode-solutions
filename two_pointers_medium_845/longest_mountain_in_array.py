@@ -1,6 +1,6 @@
 # One pass, O(1) memory solution
 class Solution:
-    def longestMountain(self, arr: List[int]) -> int:
+    def longestMountain(self, arr: list[int]) -> int:
         max_m = 0
         s = 0
         l = len(arr)
